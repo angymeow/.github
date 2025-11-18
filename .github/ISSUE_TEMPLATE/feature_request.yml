@@ -1,0 +1,101 @@
+name: Feature Request
+description: Propose a new feature for one of our packages or applications
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new feature! Please fill out the form below to help us understand your request.
+        
+  - type: input
+    id: target
+    attributes:
+      label: Target Package/Application
+      description: Which package or application should this feature be added to?
+      placeholder: e.g., @org/package-name or application-name
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case / Motivation
+      description: What problem does this feature solve? What is the use case?
+      placeholder: |
+        - What problem are you trying to solve?
+        - Who would benefit from this feature?
+        - What is the current workaround (if any)?
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this feature to work?
+      placeholder: |
+        Describe your ideal implementation or approach:
+        - What should the API/interface look like?
+        - How should users interact with this feature?
+        - Any specific requirements or constraints?
+      render: markdown
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or approaches?
+      placeholder: Describe any alternative solutions or features you've considered
+      render: markdown
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact & Benefits
+      description: What are the expected benefits and impact of this feature?
+      placeholder: |
+        - Who will benefit from this feature?
+        - What improvements will it bring?
+        - Any performance or UX improvements?
+      render: markdown
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups / Examples
+      description: If applicable, add mockups, wireframes, or examples to illustrate the feature
+      placeholder: Drag and drop images here, paste image URLs, or link to design files
+      render: markdown
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my work
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, examples, or references about the feature request
+      placeholder: Any additional information that might be helpful (links, references, etc.)
+      render: markdown
+
